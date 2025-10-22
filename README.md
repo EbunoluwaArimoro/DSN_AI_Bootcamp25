@@ -1,4 +1,4 @@
-#Predicting Youth Unemployment in Africa 🇳🇬🌍
+Predicting Youth Unemployment in Africa 🇳🇬🌍
 
 This project was developed during the DSN AI Bootcamp 2025, inspired by a session led by Olalekan Akinsande (Mastercard Foundation).
 It demonstrates how to build a predictive model from scratch using Python and real-world-inspired data.
