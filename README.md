@@ -1,101 +1,95 @@
-Predicting Youth Unemployment in Africa 🇳🇬🌍
+# Predicting Youth Unemployment in Africa
 
-This project was developed during the DSN AI Bootcamp 2025, inspired by a session led by Olalekan Akinsande (Mastercard Foundation).
-It demonstrates how to build a predictive model from scratch using Python and real-world-inspired data.
+This project builds a predictive model to forecast youth unemployment rates in African countries using key socioeconomic indicators. It was developed as a hands-on project during the DSN AI Bootcamp 2025, inspired by a session from Olalekan Akinsande (Mastercard Foundation).
 
-🧠 Project Overview
+The model uses a synthetic (but realistic) dataset to explore the relationships between GDP per Capita, Education Index, Urban Population (%), and Youth Unemployment Rates.
 
-The goal of this project is to predict youth unemployment rates in African countries using socioeconomic indicators such as:
+---
 
-GDP per Capita
+## Project Workflow and Features
 
-Education Index
+This repository provides a complete end-to-end workflow in a single Jupyter Notebook, including:
 
-Urban Population (%)
+* **1. Data Exploration (EDA):** Visualizing the relationships between GDP, education, and unemployment using Matplotlib.
+* **2. Model Building:** Training a Linear Regression model using scikit-learn to predict unemployment.
+* **3. Model Evaluation:** Assessing the model's performance and interpreting its coefficients to understand feature impact.
+* **4. Interactive Prediction:** A simple UI built with `ipywidgets` to simulate predictions for different country profiles by adjusting sliders.
 
-The dataset contains synthetic but realistic values for demonstration and learning purposes.
+---
 
-📊 Project Workflow
+## Results and Performance
 
-Data Loading & Exploration (EDA)
+The final Linear Regression model demonstrated a clear predictive capability based on the input features.
 
-Loaded dataset from GitHub or local upload
+* **R² Score: 0.74**
+    This indicates that the model explains approximately 74% of the variation in youth unemployment rates.
+* **Mean Absolute Error (MAE): 1.74**
+    This means the model's predictions are, on average, off by 1.74 percentage points.
 
-Visualized relationships between GDP, education, and unemployment
+Visualizations in the notebook also include a Predicted vs. Actual comparison chart.
 
-Model Building
+---
 
-Trained a Linear Regression model using scikit-learn
+## Tech Stack
 
-Interpreted coefficients and key insights
+* Python 3.12
+* Pandas (for data manipulation)
+* Matplotlib (for plotting)
+* Scikit-learn (for modeling and evaluation)
+* Ipywidgets (for the interactive UI)
+* Google Colab / Jupyter Notebook
 
-Model Evaluation
+---
 
-Mean Absolute Error (MAE): 1.74
+## How to Run
 
-R² Score: 0.74
+### Option 1: Run in Google Colab (Recommended)
 
-Visualization
+Click the "Open in Colab" badge below to open the notebook directly in Google Colab. The dataset is loaded from GitHub, so no local setup is required.
 
-Scatter plots for feature relationships
+**[Add your "Open in Colab" badge here]**
+*(You can create one at shields.io)*
 
-Predicted vs Actual comparison chart
+### Option 2: Run Locally
 
-Interactive Prediction UI
+1.  Clone this repository:
+    ```bash
+    git clone [https://github.com/your-username/Predicting_Youth_Unemployment_in_Africa.git](https://github.com/your-username/Predicting_Youth_Unemployment_in_Africa.git)
+    cd Predicting_Youth_Unemployment_in_Africa
+    ```
 
-Added sliders using ipywidgets to simulate predictions for different country profiles.
+2.  Install dependencies (preferably in a virtual environment):
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-⚙️ Tech Stack
+3.  Launch Jupyter Notebook and open the `.ipynb` file.
+    ```bash
+    jupyter notebook
+    ```
+    *Note: You may be prompted to upload the CSV file if running locally.*
 
-Python 3.12
+---
 
-Pandas
+## Next Steps
 
-Matplotlib
+Future improvements for this project include:
 
-scikit-learn
+* **Feature Engineering:** Adding new predictors like internet penetration, access to finance, or sectoral data.
+* **Model Comparison:** Benchmarking the Linear Regression model against others (e.g., Decision Tree, Random Forest, XGBoost).
+* **Tuning:** Experimenting with cross-validation and hyperparameter tuning for better performance.
 
-ipywidgets
+---
 
-Google Colab / Jupyter Notebook
+## Acknowledgments
 
-🚀 How to Run
-Option 1: Run in Google Colab
+* Guidance by **Olalekan Akinsande** (Mastercard Foundation).
+* Special thanks to the **Data Science Nigeria (DSN)** team for organizing the DSN AI Bootcamp 2025 and making hands-on AI learning accessible.
 
-Click below to open the notebook directly in Colab:
+---
 
-Option 2: Run Locally
+## Author
 
-Clone this repository
-
-git clone https://github.com/your-username/Predicting_Youth_Unemployment_in_Africa.git
-cd Predicting_Youth_Unemployment_in_Africa
-
-
-Install dependencies
-
-pip install -r requirements.txt
-
-
-Launch Jupyter or Colab and upload the CSV file when prompted.
-
-📈 Results
-
-The model explains about 74% of the variation in youth unemployment across countries, showing strong relationships between GDP, education, and urbanization levels.
-
-💡 Next Steps
-
-Add new predictors (internet penetration, access to finance, sectoral data)
-
-Compare multiple models (Decision Tree, Random Forest, etc.)
-
-Experiment with cross-validation and hyperparameter tuning
-
-👏 Acknowledgment
-
-Guided by Olalekan Akinsande during the DSN AI Bootcamp 2025.
-Special thanks to the Data Science Nigeria (DSN) team for making hands-on AI learning accessible.
-
-👩🏽‍💻 Author
-
-Ebunoluwa [Your Last Name]
+**Ebunoluwa Arimoro**
+* [LinkedIn Profile](https://www.linkedin.com/in/ebunoluwa-arimoro)
+* [GitHub Profile](https://github.com/EbunoluwaArimoro)
